@@ -1,0 +1,47 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Run ReturnTrace (this Windows computer)",
+      "program": "${workspaceFolder}/server/index.mjs",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "${env:USERPROFILE}/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe",
+      "runtimeArgs": [
+        "--env-file-if-exists=.env"
+      ],
+      "console": "integratedTerminal",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "serverReadyAction": {
+        "pattern": "ReturnTrace ready at (https?://\\S+)",
+        "uriFormat": "%s",
+        "action": "openExternally"
+      },
+      "args": [
+        "--production"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Run ReturnTrace",
+      "program": "${workspaceFolder}/server/index.mjs",
+      "cwd": "${workspaceFolder}",
+      "runtimeArgs": [
+        "--env-file-if-exists=.env"
+      ],
+      "console": "integratedTerminal",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "serverReadyAction": {
+        "pattern": "ReturnTrace ready at (https?://\\S+)",
+        "uriFormat": "%s",
+        "action": "openExternally"
+      }
+    }
+  ]
+}

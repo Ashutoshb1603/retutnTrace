@@ -1,0 +1,37 @@
+{
+  "name": "returntrace",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A graph-powered returns investigation agent built with FalkorDB.",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env server/index.mjs",
+    "build": "vite build --configLoader native",
+    "start": "node --env-file-if-exists=.env server/index.mjs --production",
+    "test": "node --test tests/*.test.mjs",
+    "test:integration": "node --env-file-if-exists=.env scripts/integration.mjs",
+    "evaluate": "node --env-file-if-exists=.env scripts/evaluate.mjs",
+    "seed": "node --env-file-if-exists=.env scripts/seed.mjs",
+    "db:up": "docker compose up -d falkordb",
+    "db:down": "docker compose stop falkordb",
+    "format": "prettier --write src server shared tests scripts *.mjs *.json",
+    "format:check": "prettier --check src server shared tests scripts *.mjs *.json"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "express": "^5.1.0",
+    "falkordb": "^6.2.0",
+    "lucide-react": "^0.468.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.5.0",
+    "prettier": "3.9.10",
+    "vite": "^6.3.0"
+  }
+}

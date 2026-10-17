@@ -1,0 +1,8 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    { "label": "ReturnTrace: start database", "type": "shell", "command": "docker compose up -d falkordb", "problemMatcher": [] },
+    { "label": "ReturnTrace: run app", "type": "shell", "command": "npm run dev", "windows": { "command": ".\\start.ps1" }, "isBackground": true, "problemMatcher": [], "presentation": { "reveal": "always", "panel": "dedicated" } },
+    { "label": "ReturnTrace: tests", "type": "shell", "command": "npm test", "windows": { "command": "& '${env:USERPROFILE}/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe' --test tests/*.test.mjs" }, "group": { "kind": "test", "isDefault": true }, "problemMatcher": [] }
+  ]
+}

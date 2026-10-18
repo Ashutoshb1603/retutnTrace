@@ -27,7 +27,7 @@ A shared component alone is not enough: two products must independently meet min
 - Nova: insufficient concentrated evidence; abstain.
 - Structured inspection memory: confirmed results add reported support; refuted or conflicting results change the proposed action.
 
-The dataset contains 1,920 synthetic orders. All 24 unit/API tests and the production build passed. Earlier real FalkorDB integration checks passed; the latest database recheck is pending because the local database is currently unavailable. See VERIFICATION.md for the actual tested scope. These planted scenarios are not a real-world benchmark.
+The dataset contains 1,920 synthetic orders. All 24 unit/API tests and the production build passed. The final real-FalkorDB integration suite and all four synthetic product evaluations passed on FalkorDB Cloud. See VERIFICATION.md for the actual tested scope. These planted scenarios are not a real-world benchmark.
 
 ## AI assistance and participant contribution
 
@@ -39,10 +39,10 @@ Automated and browser verification were carried out with Codex assistance. Those
 
 React, Vite, Node.js, Express, Zod, FalkorDB JavaScript client, MCP TypeScript SDK, parameterized Cypher and Docker Compose.
 
-The app runs locally on real FalkorDB v4.22.1. GitHub issue publishing is implemented behind an explicit preview/send workflow and tested with mocked responses; no actual issue was sent. Inventory and refunds are not changed.
+The app runs locally against a real FalkorDB Cloud Free instance (v4.22.0). The earlier Docker setup used v4.22.1. GitHub issue publishing is implemented behind an explicit preview/send workflow and tested with mocked responses; no actual issue was sent. Inventory and refunds are not changed.
 
-Repository URL: pending publication.
+Repository URL: https://github.com/Ashutoshb1603/retutnTrace (public, verified October 18, 2026).
 Demo video URL: pending recording.
 Live deployment: local app; public hosting not configured.
 
-Before submission: publish source excluding secrets and runtime data, record the working demo, add actual repository/video URLs, and verify the current event form. No hackathon submission has been made.
+Before submission: record the working demo, add its video URL, verify the event form. Registration is confirmed by the participant. No hackathon submission has been made.

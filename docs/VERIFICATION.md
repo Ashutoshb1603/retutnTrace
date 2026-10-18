@@ -78,3 +78,16 @@ Keep this single-workspace demo local. The supplied Compose file binds ports to 
 - Current real-database recheck is blocked: the live health endpoint reports FalkorDB unavailable, and this shell cannot access Docker's Windows control pipe. The attempted integration run was stopped. Earlier real-FalkorDB results above remain historical results, not a pass for this latest change.
 
 Before recording the final demo, start the existing database in Docker Desktop, restart the application, and rerun `npm run test:integration` and `npm run evaluate`.
+
+## October 18 finalization
+
+- Confirmed registration with the participant and checked the event deadline: October 18 at 11:59 PM IST.
+- Verified that `Ashutoshb1603/retutnTrace` is public through GitHub's API and that remote `main` is `ead0314a3072eacd3bda431b2e867c2d89ab9109`.
+- Reran all 24 unit/API tests successfully without a live model key. This session restricts writes to the normal Windows Temp directory; TEMP and TMP were pointed at a permitted workspace test directory. An initial run failed on that environment restriction and a second on slash normalization in that temporary override; using the native Windows path resolved the environment issue without changing application code.
+- Started the production server on port 4317. It correctly reports the unavailable database rather than using fixtures.
+- Docker's installed frontend and backend binaries exist. Its launcher log reports that its installation registry key cannot be found, preventing engine startup. No Docker data or registry keys were deleted or rewritten.
+- Participant chose a Free FalkorDB Cloud instance for the final demo. A Free instance was created on AWS ap-south-1 with FalkorDB v4.22.0. The private connection was saved in the ignored .env file. No credential was added to source or printed in the conversation.
+- Seeded the real cloud graph: 8,867 nodes and 15,575 edges. The production app connected to it successfully.
+- The real-FalkorDB integration suite passed on the cloud instance: query parity, persisted investigations, task deduplication, structured inspection recall, graph links, additive migration, and reconnect memory. Only its generated test graph was deleted.
+- Four-product evaluation passed on real cloud FalkorDB: Aura and Lyra shared-component findings, Pulse courier association, and Nova inconclusive. These are synthetic scenarios, not a real-world benchmark.
+- Prepared Pulse case INV-DE76104D and Nova case INV-B21E99B7 in the real application graph using the no-key evidence policy; each used zero model calls. The participant will record the live Aura inspection workflow.

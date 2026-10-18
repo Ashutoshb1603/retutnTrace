@@ -24,7 +24,7 @@ Open **Inspection queue**, filter **Needs approval**, and choose **Review ticket
 
 Record a clearly labeled simulated result. To demonstrate a changed recommendation, use a fresh target/task with a refuted sample: “DEMO ONLY: independent simulated inspection of 12 units did not reproduce the suspected failure. No physical inspection occurred.” Choose Refuted, tested 12, reproducing failure 0.
 
-Rerun the connected product. Show the independent-review recommendation, **What the inspection changes**, and the inspection-memory panel. The decision check contrasts cohort evidence alone with the added inspection and labels the next action as changed. A confirmed report can instead retain the action; the UI labels that honestly. Confirmed outcomes instead add reported support; conflicting reports require review. Existing terminal tickets cannot be silently rewritten. The provided workspace already contains a clearly labeled confirmed 8/10 demo sample; use a separate demo graph for a fresh recording if desired.
+Rerun the connected product. Show the independent-review recommendation, **What the inspection changes**, and the inspection-memory panel. The decision check contrasts cohort evidence alone with the added inspection and labels the next action as changed. A confirmed report can instead retain the action; the UI labels that honestly. Confirmed outcomes instead add reported support; conflicting reports require review. Existing terminal tickets cannot be silently rewritten. A fresh cloud graph starts with no inspection history. Use Aura for the refuted sample in the recording. The older local Docker graph contains a clearly labeled confirmed 8/10 demo sample; preserve it. If recording that older graph, use its still-open Lyra task instead of trying to rewrite a closed Aura task.
 
 Optional GitHub delivery is a separate explicit Send action and requires credentials. Do not claim an issue was published unless it actually was.
 
@@ -34,7 +34,7 @@ Investigate Pulse Mini: the recommendation changes to a ParcelFlow handling audi
 
 Explain that these are different evidence-driven paths through the same scoped MCP tools. Optional LLM selection is limited to three provider requests and cannot skip the mandatory checks.
 
-For live-model proof, open **Run log** in Aura case INV-96B5D093. It shows Adaptive LLM agent, three model requests, and Selected by model on the confounding, component, and source-path checks. Reopening this saved case uses no additional model quota.
+For live-model proof, open **Run log** in the Aura case recorded during your demo. State the mode and model-call count actually shown, including any policy fallback. The earlier local Docker graph also has verified live-model case INV-96B5D093; it is historical evidence, not a case that exists in a fresh cloud graph. Reopening any saved case uses no additional model quota.
 
 ## 2:40–3:00 — Close
 

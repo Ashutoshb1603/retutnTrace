@@ -1,6 +1,6 @@
 # ReturnTrace submission copy
 
-Use the field text below in the WeMakeDevs submission form. The video URL must be added after upload; the project has not been submitted yet.
+Use the field text below in the WeMakeDevs submission form. The participant supplied the recorded demo URL; project submission is not yet confirmed.
 
 ## Project name
 ReturnTrace
@@ -15,7 +15,7 @@ Track 01: Agents That Act on Connected Data
 https://github.com/Ashutoshb1603/retutnTrace
 
 ## Demo video
-PENDING: paste the accessible demo video URL after recording and upload.
+https://www.youtube.com/watch?v=qRwcktmLyAU
 
 ## Deployment or local setup
 Local application connected to a real FalkorDB Cloud Free instance, with complete Docker and Node.js setup instructions in the repository README. FalkorDB is required. Run `docker compose up -d falkordb`, copy `.env.example` to `.env`, install dependencies, and run `npm run dev`. The Windows launcher is `./start.ps1`. An optional private model key enables LLM tool selection; the adaptive evidence policy runs without a paid API.

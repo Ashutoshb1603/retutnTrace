@@ -42,7 +42,7 @@ React, Vite, Node.js, Express, Zod, FalkorDB JavaScript client, MCP TypeScript S
 The app runs locally against a real FalkorDB Cloud Free instance (v4.22.0). The earlier Docker setup used v4.22.1. GitHub issue publishing is implemented behind an explicit preview/send workflow and tested with mocked responses; no actual issue was sent. Inventory and refunds are not changed.
 
 Repository URL: https://github.com/Ashutoshb1603/retutnTrace (public, verified October 18, 2026).
-Demo video URL: pending recording.
+Demo video URL: https://www.youtube.com/watch?v=qRwcktmLyAU
 Live deployment: local app; public hosting not configured.
 
-Before submission: record the working demo, add its video URL, verify the event form. Registration is confirmed by the participant. No hackathon submission has been made.
+Demo recorded and video URL supplied by the participant. Before submission: verify video viewing access and complete the event form. Registration is confirmed by the participant. No hackathon submission has been made.
